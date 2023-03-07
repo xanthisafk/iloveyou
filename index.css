@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+    color: whtite;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container > svg {
+    padding: min(10%, 50px);
+}
+
+.dashRed {
+    animation: 5s dashR ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dashR {
+    1% { 
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+        fill: red;
+    }
+
+}
+
+.dashWhite {
+    animation: 5s dashW ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dashW {
+    1% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+}
+
+.restart {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    transition: .3s ease-in-out;
+}
+
+.restart:hover {
+    transform: rotate(360deg);
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+}
