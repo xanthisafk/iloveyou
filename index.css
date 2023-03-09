@@ -41,7 +41,7 @@ body, html {
     100% {
         opacity: 1;
         stroke-dashoffset: 0;
-        fill: red;
+        fill: #5c3455;
     }
 
 }
